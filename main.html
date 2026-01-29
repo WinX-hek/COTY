@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: oswald;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), #eae9eb);
+          background-color: #eae9eb;
+          /* O */
+          background-attachment: fixed;  
+          /* O */
+          background-repeat: no-repeat;  
+        background-size: 100% 150px;   
+        margin: 0;
+       display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+    table {
+        width: 100%;
+        flex: 1; 
+        border-collapse: collapse;
+        /* O */
+        table-layout: fixed;
+    }
+    td {
+        text-align: center; 
+        padding: 10px;
+        vertical-align: middle;
+    }
+    h1{
+        text-align: center;
+        margin-top: 0;
+        color: #eae9eb;
+         text-shadow: 0px 4px 15px #eae9eb;
+    letter-spacing: 5px;
+    font-size: 80px;
+    }
+    th{
+        font-size: 25px;
+        margin-bottom: 15px
+    }
+    img{
+    width: 70%;       
+    height: 300px;
+      /* O  */
+    object-fit: cover;
+    /* O */
+    display: inline-block; 
+    border-radius: 35px;
+    /* O */
+    transition: transform 0.3s ease;
+    }
+    /* O */
+    img:hover {
+    transform: scale(1.02);
+}
+    tfoot td {
+        text-align: center;
+        height: 100px;      
+        font-size: 18px;
+        padding-top: 20px;
+        /* O */
+        vertical-align: middle;
+       background-image: linear-gradient(to top, rgba(0, 0, 0, 1), #eae9eb); 
+        color: #eae9eb; 
+    }
+  
+</style>
+<body>
+    <h1>COTY</h1>
+    <table >
+        <thead>
+           <th style="width: 650px;">Best Design</th>
+            <th style="width: 700px;">Best Performance</th>
+            <th style="width: 650px;">Best budget</th>
+        </thead>
+        <tbody>
+            <!-- masukkan page HTML pada href="(page HTML)" -->
+            <tr>
+                <td><a href=""><img src="design.jpg" alt=""></a></td>
+                <td><a href=""><img src="perfomance.avif" alt=""></a></td>
+                <td><a href=""><img src="budget.avif" alt=""></a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    &copy;Di buat oleh Kennie dan Winston
+                </td>
+            </tr>
+        </tfoot>
+    </table> 
+</body>
+</html>
